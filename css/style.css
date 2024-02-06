@@ -310,13 +310,13 @@ h3 {
 
 @media screen and (max-width: 1600px) {
   html {
-    /* font-size: 52.5%; */
+    font-size: 52.5%;
   }
 }
 
 @media screen and (max-width: 1400px) {
   html {
-    /* font-size: 42.5%; */
+    font-size: 42.5%;
   }
 }
 
