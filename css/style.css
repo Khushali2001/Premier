@@ -24,6 +24,7 @@ html {
 
 body {
   font-family: "Poppins";
+  font-size: 1.6rem;
 }
 
 .flex {
@@ -58,25 +59,25 @@ a {
 
 h1 {
   font-family: "Soliden Trial";
-  font-size: 60px;
+  font-size: 6rem;
 }
 
 h2 {
   font-family: "Soliden Trial";
-  font-size: 54px;
+  font-size: 5.4rem;
 }
 
 h3 {
   font-family: "Soliden Trial";
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .nav {
-  padding: 15px 60px;
-  margin-top: 20px;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  margin-bottom: 40px;
+  padding: 1.5rem 6rem;
+  margin-top: 2rem;
+  border-top: 0.2rem solid #000;
+  border-bottom: 0.2rem solid #000;
+  margin-bottom: 4rem;
   overflow: hidden;
 }
 
@@ -88,21 +89,21 @@ h3 {
   content: "\ebe2";
   font-family: "remixicon";
   position: absolute;
-  right: -20px;
+  right: -0.2rem;
 }
 
 .logo:after {
   content: "model management";
   position: absolute;
-  bottom: -1px;
+  bottom: -0.1rem;
   right: 0;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #8c8c8c;
 }
 
 .logo h2 {
   font-family: "Soliden Trial";
-  letter-spacing: -3px;
+  letter-spacing: -0.3rem;
 }
 
 .menu-list.flex {
@@ -112,20 +113,20 @@ h3 {
 }
 
 .menu a {
-  padding: 34px 66px;
-  border-right: 2px solid #000;
+  padding: 3.4rem 6.6rem;
+  border-right: 0.2rem solid #000;
   font-weight: 600;
 }
 
 .menu-list div i.ri-search-line {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .video {
   position: relative;
-  width: calc(100% - 120px);
+  width: calc(100% - 12rem);
   height: 90vh;
-  margin: 0 60px;
+  margin: 0 6rem;
 }
 
 .video video {
@@ -140,7 +141,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 4rem;
 }
 
 .overlay > div {
@@ -153,40 +154,40 @@ h3 {
 .video h1 {
   font-family: "Soliden Trial";
   color: #fff;
-  max-width: 590px;
-  margin-bottom: 40px;
+  max-width: 59rem;
+  margin-bottom: 4rem;
 }
 
 .video-title p {
   color: #fff;
-  padding: 37.4px 42px;
-  border: 1px solid #fff;
-  border-radius: 60px;
+  padding: 3.5rem 4.2rem;
+  border: 0.1rem solid #fff;
+  border-radius: 15rem;
 }
 
 .video-link {
-  margin-top: 20px;
+  margin-top: 2rem;
   color: #fff;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .video-link svg {
-  width: 50px;
+  width: 5rem;
   height: auto;
 }
 
 .modal-marque {
   width: 100%;
   overflow: hidden;
-  padding: 60px 0;
+  padding: 6rem 0;
   white-space: nowrap;
 }
 
 .modal-container {
   width: 100%;
   display: inline-block;
-  animation: marquee 40s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 .modal-container:hover {
@@ -195,14 +196,15 @@ h3 {
 
 .modal-details {
   display: inline-block;
-  gap: 10px;
-  margin: 0 25px;
+  gap: 2rem;
+  margin: 0 2.5rem;
   text-align: center;
+  width: 10%;
 }
 
 .modal-details img {
-  width: 170px;
-  height: 145px;
+  width: 100%;
+  height: 14.5rem;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
@@ -218,18 +220,19 @@ h3 {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-48%);
+    transform: translateX(-28%);
   }
 }
 
 .category {
-  padding: 25px 60px;
+  padding: 2.5rem 6rem;
   justify-content: space-between;
   width: 100%;
+  gap: 4rem;
   overflow-y: auto;
   flex-wrap: nowrap;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 0.2rem solid #000;
+  border-bottom: 0.2rem solid #000;
 }
 
 .category::-webkit-scrollbar {
@@ -237,7 +240,7 @@ h3 {
 }
 
 .category-txt {
-  gap: 40px;
+  gap: 4rem;
   flex-wrap: nowrap;
   flex-shrink: 0;
 }
@@ -251,17 +254,71 @@ h3 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100%;
   opacity: 0;
-  border: 1px solid #000;
+  border: 0.1rem solid #000;
   transform: translate(-50%, -50%);
   transition: all 0.5s ease-in-out;
 }
 
 .category-txt p:hover::after {
-  width: 30px;
-  height: 22px;
+  width: 3rem;
+  height: 2.2rem;
   opacity: 1;
+}
+
+.vogue-shot.flex {
+  width: calc(100% - 12rem);
+  margin: 6rem 6rem;
+}
+
+.vogue-shot.flex > div:first-child {
+  width: 55%;
+  padding-right: 5rem;
+}
+.vogue-shot.flex > div:last-child {
+  width: 45%;
+}
+
+.vogue-shot.flex > div img {
+  width: 100%;
+  height: 76rem;
+  object-fit: cover;
+  margin-bottom: 2.5rem;
+  transform: scaleX(-1);
+}
+
+.vogue-shot.flex > div:last-child img {
+  height: 55rem;
+  object-position: top;
+  transform: scaleX(1);
+}
+
+.shot-right-bottom div:first-child p {
+  font-weight: bold;
+  padding-right: 3rem;
+  text-align: justify;
+  font-size: 2.5rem;
+}
+
+.shot-right-bottom div:last-child p {
+  font-weight: normal;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    /* font-size: 52.5%; */
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    /* font-size: 42.5%; */
+  }
+}
+
+@media screen and (max-width: 1024px) {
 }
