@@ -27,6 +27,13 @@ body {
   font-size: 1.6rem;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
 .flex {
   display: flex;
   flex-wrap: nowrap;
@@ -50,6 +57,10 @@ body {
 
 .col {
   flex-direction: column;
+}
+
+.col-rev {
+  flex-direction: column-reverse;
 }
 
 a {
@@ -89,7 +100,7 @@ h3 {
   content: "\ebe2";
   font-family: "remixicon";
   position: absolute;
-  right: -0.2rem;
+  right: -2.2rem;
 }
 
 .logo:after {
@@ -215,6 +226,44 @@ h3 {
   transform: scale(1.1);
 }
 
+.movie-shot-wrapper {
+  height: 95vh;
+}
+
+.movie-shot-right {
+  padding-left: 7rem;
+}
+
+.movie-shot-right > div {
+  height: 50%;
+}
+
+.movie-shot-details {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.movie-shot-details > p {
+  font-size: 2.5rem;
+  max-width: 45rem;
+  font-weight: bold;
+}
+
+.movie-shot-details .movie-desc {
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+.movie-shot-imgs img:first-child {
+  width: 60%;
+  padding-right: 3rem;
+}
+
+.movie-shot-imgs img:last-child {
+  width: 40%;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0%);
@@ -298,25 +347,134 @@ h3 {
 
 .shot-right-bottom div:first-child p {
   font-weight: bold;
-  padding-right: 4rem;
-  text-align: justify;
   font-size: 2.5rem;
 }
 
 .shot-right-bottom div:last-child p {
   font-weight: normal;
   text-align: justify;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 10rem;
+}
+
+.our-work {
+  width: calc(100% - 12rem);
+  margin: 6rem;
+}
+
+.our-work-wrapper > div:first-child {
+  width: 40%;
+}
+
+.our-work-wrapper > div:last-child {
+  width: 60%;
+  padding-left: 10rem;
+}
+
+.our-work-txt {
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+
+.our-work-txt::before {
+  content: "";
+  top: 13%;
+  left: 20%;
+  position: absolute;
+  width: 35rem;
+  height: 35rem;
+  background-image: url(../images/works-en.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: center;
+  /* transform: translate(-30%, -35%); */
+}
+
+.our-work-txt:hover::before {
+  transition: all 1s ease;
+  transform: rotate(360deg);
+}
+
+.our-work-txt h4 {
+  max-width: 50rem;
+  font-size: 2.5rem;
+}
+
+.our-work-img img {
+  width: 100%;
+  height: 70rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.movie-shot {
+  width: calc(100% - 12rem);
+  margin: 6rem;
+}
+
+.movie-shot-wrapper > div {
+  width: 50%;
+}
+
+.video-2 {
+  padding: 1rem 0;
+  margin: 0 6rem;
+  background-color: #000;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.video-2 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-shot-3 {
+  margin: 6rem;
+  height: 98vh;
+  overflow: hidden;
+}
+
+.movie-shot-3-wrappr > div:first-child {
+  width: 60%;
+  padding-right: 4rem;
+}
+
+.movie-shot-3-wrappr > div:last-child {
+  width: 40%;
+}
+
+.movie-shot-3-right-img {
+  height: 70vh;
+}
+
+.movie-shot-3-wrappr img {
+  padding-bottom: 2rem;
+}
+
+.movie-shot-3-right-txt h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.movie-shot-3-right-txt p {
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1600px) {
   html {
-    font-size: 52.5%;
+    /* font-size: 52.5%; */
   }
 }
 
 @media screen and (max-width: 1400px) {
   html {
-    font-size: 42.5%;
+    /* font-size: 42.5%; */
   }
 }
 
