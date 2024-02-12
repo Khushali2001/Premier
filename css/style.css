@@ -466,15 +466,95 @@ h3 {
   font-weight: 600;
 }
 
+.upldates {
+  width: calc(100% - 12rem);
+  margin: 0 6rem;
+  padding: 6rem 0;
+}
+
+.update-rows {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.update-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid #000;
+  position: relative;
+}
+
+.update-row > div {
+  width: 50%;
+}
+
+.update-row img {
+  position: absolute;
+  left: 10%;
+  opacity: 0;
+  width: 14rem;
+  height: 11rem;
+  border-radius: 100%;
+  transition: all 1s ease;
+}
+
+.update-row:hover img {
+  left: 25%;
+  opacity: 1;
+}
+
+.row-left p {
+  font-weight: 400;
+}
+
+.row-right {
+  margin-top: 2rem;
+}
+
+.row-right h4 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.row-right span {
+  font-size: 1.4rem;
+  position: relative;
+  top: -1rem;
+}
+
+.text-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.text-marquee-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3rem;
+}
+
+.text-marquee-wrapper h2 {
+  flex-shrink: 0;
+  color: transparent;
+  -webkit-text-stroke: 2px #000;
+}
+
+.text-marquee-wrapper h2 span {
+  font-family: "Poppins";
+}
+
 @media screen and (max-width: 1600px) {
   html {
-    /* font-size: 52.5%; */
+    font-size: 52.5%;
   }
 }
 
 @media screen and (max-width: 1400px) {
   html {
-    /* font-size: 42.5%; */
+    font-size: 42.5%;
   }
 }
 
