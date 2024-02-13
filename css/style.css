@@ -333,14 +333,14 @@ h3 {
 
 .vogue-shot.flex > div img {
   width: 100%;
-  height: 100rem;
+  height: 85vh;
   object-fit: cover;
   margin-bottom: 2.5rem;
   transform: scaleX(-1);
 }
 
 .vogue-shot.flex > div:last-child img {
-  height: 80rem;
+  height: 65vh;
   object-position: top;
   transform: scaleX(1);
 }
@@ -389,12 +389,8 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   transform-origin: center;
-  /* transform: translate(-30%, -35%); */
-}
-
-.our-work-txt:hover::before {
   transition: all 1s ease;
-  transform: rotate(360deg);
+  /* transform: translate(-30%, -35%); */
 }
 
 .our-work-txt h4 {
@@ -404,7 +400,7 @@ h3 {
 
 .our-work-img img {
   width: 100%;
-  height: 70rem;
+  height: 70vh;
   object-fit: cover;
   object-position: top;
 }
@@ -434,13 +430,16 @@ h3 {
 
 .movie-shot-3 {
   margin: 6rem;
-  height: 98vh;
   overflow: hidden;
 }
 
 .movie-shot-3-wrappr > div:first-child {
   width: 60%;
   padding-right: 4rem;
+}
+
+.movie-shot-3-wrappr > div:first-child {
+  height: 94vh;
 }
 
 .movie-shot-3-wrappr > div:last-child {
@@ -534,12 +533,22 @@ h3 {
   display: flex;
   flex-wrap: nowrap;
   gap: 3rem;
+  animation: marqueetxt 100s linear infinite;
+}
+
+@keyframes marqueetxt {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-150%);
+  }
 }
 
 .text-marquee-wrapper h2 {
   flex-shrink: 0;
   color: transparent;
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 1px #000;
 }
 
 .text-marquee-wrapper h2 span {
