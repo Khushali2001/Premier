@@ -114,6 +114,10 @@ h3 {
   color: #8c8c8c;
 }
 
+.ri-menu-3-line {
+  display: none;
+}
+
 .logo h2 {
   font-family: "Soliden Trial";
   letter-spacing: -0.3rem;
@@ -168,7 +172,7 @@ h3 {
   font-family: "Soliden Trial";
   color: #fff;
   max-width: 59rem;
-  margin-bottom: 4rem;
+  padding: 2rem 0;
 }
 
 .video-title p {
@@ -676,35 +680,35 @@ footer.footer {
   }
 
   .video {
-    height: 60vh;
+    height: 80vh;
   }
 
   .vogue-shot.flex > div img {
-    height: 65vh;
+    height: 80vh;
   }
 
   .vogue-shot.flex > div:last-child img {
-    height: 49vh;
-  }
-
-  .our-work-img img {
-    height: 50vh;
-  }
-
-  .movie-shot-wrapper {
-    height: 55vh;
-  }
-
-  .video-2 {
     height: 60vh;
   }
 
+  .our-work-img img {
+    height: 80vh;
+  }
+
+  .movie-shot-wrapper {
+    height: 80vh;
+  }
+
+  .video-2 {
+    height: 80vh;
+  }
+
   .movie-shot-3-wrappr > div:first-child {
-    height: 65vh;
+    height: 80vh;
   }
 
   .movie-shot-3-right-img {
-    height: 50vh;
+    height: 60vh;
   }
 
   .blog-card h4 {
@@ -737,6 +741,12 @@ footer.footer {
 @media screen and (max-width: 950px) {
   .menu {
     display: none;
+  }
+
+  .ri-menu-3-line {
+    display: block;
+    font-size: 25px;
+    margin-left: 2rem;
   }
 
   .menu-list.flex {
@@ -808,6 +818,10 @@ footer.footer {
 }
 
 @media screen and (max-width: 769px) {
+  .nav {
+    padding: 1.5rem 3rem;
+  }
+
   .video {
     width: calc(100% - 6rem);
     margin: 0 3rem;
