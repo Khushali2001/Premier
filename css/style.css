@@ -822,6 +822,10 @@ footer.footer {
     padding: 1.5rem 3rem;
   }
 
+  .video .overlay {
+    padding: 3rem;
+  }
+
   .video {
     width: calc(100% - 6rem);
     margin: 0 3rem;
@@ -974,6 +978,18 @@ footer.footer {
   .video,
   .video-2 {
     height: 35vh;
+  }
+
+  .video .overlay {
+    padding: 2rem;
+  }
+
+  .video-link {
+    margin-top: 1rem;
+  }
+
+  .video-link svg {
+    width: 3rem;
   }
 
   h1 {
