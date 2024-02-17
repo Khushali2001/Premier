@@ -542,13 +542,16 @@ h3 {
   padding: 1rem 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
 }
 
-.text-marquee-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 3rem;
-  animation: marqueetxt 100s linear infinite;
+.text-marquee h2 {
+  flex-shrink: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  animation: marqueetxt 40s infinite linear;
 }
 
 @keyframes marqueetxt {
@@ -556,7 +559,7 @@ h3 {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-150%);
+    transform: translateX(calc(-100% - 2rem));
   }
 }
 
